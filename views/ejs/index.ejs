@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <h1>Currency Conversion Calculator</h1>
+
+    <form id="currency-converter" action="/convert" method="post">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" name="userInput" required />
+
+      <div class="countryContainer">
+        <div class="country1">
+          <label for="fromCurrency">From Currency</label>
+          <select id="fromCurrency" name="fromCurrency" required>
+            <% for (let currency in locals.country) { %>
+            <option><%= currency %></option>
+            <% } %>
+          </select>
+        </div>
+
+        <div class="country2">
+          <label for="toCurrency">To Currency</label>
+          <select id="toCurrency" name="toCurrency" required>
+            <option>MMK</option>
+            <% for (let currency in locals.country) { %>
+              <% if (currency !== "MMK") { %>
+                <option><%= currency %></option>
+              <% } %>
+            <% } %>
+          </select>
+        </div>
+      </div>
+      <% if(locals.country1 || locals.country2) { %>
+      <p>
+        Selected Conversion Rates:
+        <span id="selected-from"> <%= country1 %> </span>to
+        <span id="selected-to"> <%= country2 %> </span>
+      </p>
+      <% } %>
+
+      <% if (locals.amount ) { %>
+        <p id="converted-amount">
+          Converted Amount: &ensp;
+          <span id="value">
+            <%= locals.amount %> <span><%= country2 %> </span>
+          </span>
+        </p>
+      <% } %>
+
+      <input type="submit" id="convert-button" value="Convert" />
+    </form>
+  </body>
+</html>

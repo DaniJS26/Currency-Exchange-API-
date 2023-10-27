@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>result</title>
+    <link rel="stylesheet" href="css/result.css" />
+  </head>
+  <body>
+    <form action="/result">
+      <p>
+        <%= date %>
+      </p>
+      <% if(locals.country1 || locals.country2) { %>
+      <p>
+        Selected Conversion Rates: &ensp;
+        <span id="selected-from"> <span id="value">1</span> <%= country1 %> </span>→
+        <span id="selected-to"> <span id="value"> <%= value2 %> </span> <%= country2 %> </span>
+      </p>
+      <% } %> <% if (locals.amount ) { %>
+      <p id="converted-amount">
+        Converted Amount: &ensp;
+        <span id="value">
+          <%= locals.amount %> <span><%= country2 %> </span>
+        </span>
+      </p>
+      <% } %>
+    </form>
+  </body>
+</html>

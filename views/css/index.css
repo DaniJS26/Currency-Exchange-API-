@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 40px 0;
+  color: #CABFAD;
+  font-size: 42px;
+}
+
+form {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: #2E2E30;
+  border-radius: 6px;
+  width: 400px;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.countryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #f4b506;
+}
+
+.country1 {
+  width: 40%;
+}
+
+.country2 {
+  width: 40%;
+}
+
+input {
+  background-color: #000;
+  border: none;
+  color: rgb(233, 229, 222);
+}
+
+
+input[type="number"],
+select {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all ease 400ms;
+}
+
+
+input[type="number"],
+select:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+p {
+  margin: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #86868B;
+}
+
+input[type="submit"] {
+  background-color: #0f92fd;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all ease 400ms;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #FF402A;
+  background: black;
+  color: white;
+}
+
+#fromCurrency, #toCurrency {
+  background-color: #242426;
+  color: rgb(12, 244, 12);
+  font-size: 0.9rem;
+}
+
+#converted-amount {
+  margin-left: 7px;
+  font-weight: bold;
+  font-size: 18px;
+  color: green;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  width: 80%;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+span {
+  color: greenyellow;
+  
+}

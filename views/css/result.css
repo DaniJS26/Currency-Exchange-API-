@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', 'Montserrat', sans-serif;
+}
+
+form {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: #2E2E30;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 600px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+p {
+  margin: 15px 0;
+  color: #dddbd9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #007bff;
+  background: dimgrey;
+  color: white;
+}
+
+#converted-amount {
+  margin-left: 7px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #dddbd9;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  width: 80%;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+
+span {
+  color: #ea9000;
+  
+}
+
+#value {
+  color: rgb(5, 190, 5);
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
